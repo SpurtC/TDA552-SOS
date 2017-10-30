@@ -6,7 +6,7 @@ import java.util.*;
 
 
 /**
- * Jag har gjort en ändring
+ * Jag har gjort en ändring! MLDFL
  */
 public class DrawPolygons extends Component{
     private ArrayList<String> polygonNames;
