@@ -12,6 +12,8 @@ public class DrawPolygons extends Component{
         polygonNames = new ArrayList<>(10);
         centerPoints = new ArrayList<>(10);
 
+        Polygon hej = new Polygon("green", new Point(100,200));
+
         polygonNames.add("square");
         polygonNames.add("triangle");
         polygonNames.add("rectangle");
