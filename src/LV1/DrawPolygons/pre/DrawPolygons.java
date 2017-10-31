@@ -8,6 +8,7 @@ import java.util.*;
 /**
  * Jag har gjort en ändring!
  */
+
 public class DrawPolygons extends Component{
     private ArrayList<String> polygonNames;
     private ArrayList<Point>  centerPoints;
