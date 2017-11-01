@@ -1,29 +1,20 @@
-package LV1.DrawPolygons.post;
+
 
 import java.awt.*;
 
-public class Polygon {
-    private String name;
-    private Point centerPoint;
+public abstract class Polygon {
+    public String name;
+    public Point centerPoint;
 
-    Polygon(String name, Point centerPoint) {
+    public Polygon(String name, Point centerPoint) {
         this.name = name;
         this.centerPoint = centerPoint;
     }
+    public Polygon(){
 
-    public void paint (Graphics g) {
-        switch (this.name){
-            case "square":
-                paintSquare(g);
-                break;
-            case "triangle":
-                paintTriangle(g);
-                break;
-            case "rectangle":
-                paintRectangle(g);
-                break;
-        }
     }
+
+    public abstract void paint (Graphics g);
 
     private void paintSquare(Graphics g){
         g.drawRect(this.centerPoint.x - 10, this.centerPoint.y - 10, 20, 20);
